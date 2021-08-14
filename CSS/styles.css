@@ -91,6 +91,16 @@
 {
     margin-right: 0.3rem;
 }
+
+.hovertext 
+{
+    transition: color 0.3s ease-in;
+}
+.hovertext:hover 
+{
+    color: var(--yellow5);
+    font-weight: bold;
+}
 .topnav ul li a
 {
     margin-right: 1rem;
