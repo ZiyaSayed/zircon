@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root 
 {
     --yellow1: #FFF464;
@@ -11,6 +12,7 @@
     --grey2: #D6D6D6;
     --grey3: #B9B9B9;
     --grey4: #919191;
+    --lightgrey: #e9ecef;
     --black1: #333533;
     --black2: #202020;
     --maroon1: #a82020;
@@ -23,6 +25,227 @@
     --green1: #75b82b;
     --green2: #4cb752;
     --purple: #30013d;
+}
+
+* 
+{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container 
+{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* ===============Styling top Navbar=================== */
+
+.headerSection 
+{
+    background-color: var(--lightgrey);
+}
+
+#topHeader 
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 42px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerSection li a 
+{
+    text-decoration: none;
+    color: var(--grey4);
+}
+
+.headerSection li
+{
+    list-style: none;
+}
 
 
+.topnav ul
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.topnav ul li a
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNavText 
+{
+    margin-right: 0.3rem;
+}
+.topnav ul li a
+{
+    margin-right: 1rem;
+}
+
+.countryFlag 
+{
+    width: 1rem;
+    margin-right: 0.3rem;
+}
+
+#welcomeNote 
+{
+    margin-right: 2rem;
+}
+
+/* ===========styling dropdown menu============== */
+.dd_menu ul 
+{
+    display: flex;
+    flex-direction: column;
+    list-style-position: outside;
+
+}
+.dd_menu ul li:nth-child(2)
+{
+    margin-left: -5.2rem;
+}
+
+.dd_menu ul li 
+{
+    padding: 0.8rem 0.8rem 0rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--black1);
+}
+
+.dd_menu ul li:last-child 
+{
+    padding-bottom: 0.5rem;
+}
+
+.topnav ul li a.a_parent.active + .dd_menu 
+{
+    display: block;
+}
+
+.topnav .dd_menu{
+	position: absolute;
+	top: 4rem;
+	left: 1rem;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+.dd_menu_text:hover  
+{
+    color: var(--yellow4);
+}
+
+.topnav .dd_menu:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent var(--yellow2) transparent;
+}
+
+.dd_menu_2 ul 
+{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: left;
+}
+
+.topnav ul li a.a_parent_2.active + .dd_menu_2
+{
+    display: block;
+}
+
+.topnav .dd_menu_2{
+	position: absolute;
+	top: 4rem;
+	left: 6rem;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+.topnav .dd_menu_2:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent transparent var(--yellow2) transparent;
+}
+
+.dd_menu_text_2:hover  
+{
+    color: var(--yellow4);
+}
+
+.dd_menu_2 ul
+{
+    list-style: none;
+    padding : 0;
+    margin : 0;
+}
+
+.dd_menu_2 ul li a 
+{
+    line-height: 30px;
+}
+
+.dd_menu_2 ul li 
+{
+    font-size: 0.8rem;
+    color: var(--black1);
+    list-style-position: inside;
+    text-align: left;
+    display : inline;
+    position : relative;
+    cursor : pointer;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.dd_img 
+{
+    width: 2rem;
+    display: flex;
+    justify-content: left;
+}
+
+.dd_text 
+{
+    width: 2rem;
+    display: flex;
+    justify-content: left;
+    color: var(--black1);
+}
+
+.dd_text:hover 
+{
+    color: var(--yellow4);
+}
+.dd_menu_a_2 img 
+{
+    width: 1rem;
+    vertical-align: middle;
+    
 }
