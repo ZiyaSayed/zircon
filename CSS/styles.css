@@ -43,7 +43,7 @@
 
 /* ===============Styling top Navbar=================== */
 
-.headerSection 
+#headerSection1 
 {
     background-color: var(--lightgrey);
 }
@@ -58,13 +58,13 @@
     justify-content: space-between;
 }
 
-.headerSection li a 
+#headerSection1 li a 
 {
     text-decoration: none;
     color: var(--grey4);
 }
 
-.headerSection li
+#headerSection1  li
 {
     list-style: none;
 }
@@ -149,8 +149,11 @@
 
 .topnav .dd_menu{
 	position: absolute;
-	top: 4rem;
+	top: 2.6rem;
 	left: 1rem;
+    z-index: 1;
+    opacity: 1;
+    background-color: white;
     box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
     display: none;
 }
@@ -186,8 +189,11 @@
 
 .topnav .dd_menu_2{
 	position: absolute;
-	top: 4rem;
+	top: 2.6rem;
 	left: 6rem;
+    z-index: 1;
+    opacity: 1;
+    background-color: white;
     box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
     display: none;
 }
@@ -258,4 +264,92 @@
     width: 1rem;
     vertical-align: middle;
     
+}
+
+/* =============MEDIA QUERY FOR TOP NAV============== */
+
+@media (max-width: 1024px)
+{
+    #topHeader 
+    {
+        display: none;
+    }
+}
+
+/* =====================
+                Middle Header 
+                            ===================== */
+#midHeader 
+{
+    padding: 0.8rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#midNav-2 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#searchBar 
+{
+    border: 1px var(--grey2) solid;
+    padding: 0.2rem 1rem;
+}
+#searchBar i 
+{
+    color: var(--grey4);
+}
+
+#searchBar input 
+{
+    width: 450px;
+    outline: none;
+    border: none;
+}
+
+#searchBar input::placeholder
+{
+    color: var(--grey4);
+}
+
+#midNavIcons 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.midNavIcon 
+{
+    border: 1px solid var(--grey3);
+    margin-left: 1rem;
+}
+
+#midNavIcons .midNavIcon i
+{
+    padding: 0.5rem;
+}
+#midNavIcons .midNavIcon
+{
+    border-radius: 50%;
+}
+
+#contactNumber 
+{
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: black;
+}
+
+/* =============MEDIA QUERY FOR TOP NAV============== */
+
+@media (max-width: 1024px)
+{
+    #midHeader 
+    {
+        display: none;
+    }
 }

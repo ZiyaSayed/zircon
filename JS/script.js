@@ -20,7 +20,7 @@ function coordinate(event) {
     // clientY gives vertical coordinates
     let y = event.clientY;
     
-    if(x>101 || y>130)
+    if(x>101 || y>100)
         a_parent.classList.remove("active");
 
     if(x>220 || y>285 || x<100)
