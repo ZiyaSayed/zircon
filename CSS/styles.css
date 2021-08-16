@@ -372,13 +372,15 @@
     display: flex;
     justify-content: space-between;
 }
-
+.categoryMenu 
+{
+    background-color: var(--purple3); 
+}
 .allCategories 
 {
     display: flex;
     width: 250px;
-    background-color: var(--purple3);
-    padding: 0.5rem;
+    padding: 0.7rem 0.5rem;
     align-items: center;
     text-align: center;
     color: white;
@@ -442,3 +444,114 @@
     font-weight: 700;
     font-size: 1rem;
 }
+
+/* -----------Styling category dropdown menu----------------- */
+.categoryDropdown 
+{
+    position: absolute;
+	top: 10.3rem;
+	left: 2.1rem;
+    width:  263px;
+    z-index: 6;
+    opacity: 1;
+    background-color: white;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+.allCategories:hover 
+{
+    cursor: pointer;
+}
+
+.categoryMenu:hover .categoryDropdown 
+{
+    display: block;
+}
+
+.categoryDropdown ul li a 
+{
+    display: flex;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    align-items: center;
+    color: var(--black1);
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.categoryDropdown ul li:not(:last-child)
+{
+    border-bottom: 1px solid var(--grey2);
+}
+
+.categoryDropdown ul li a:hover
+{
+    color: var(--orange);
+}
+
+.categoryDropdown ul li 
+{
+    list-style: none;
+}
+
+.categoryName 
+{
+    width: 80%;
+}
+
+/* -----------Styling laptop and computers submenu----------- */
+
+#LaptopSubmenu 
+{
+    position: absolute;
+	top: 0;
+	left: 100%;
+    display: flex;
+    z-index: 6;
+    opacity: 1;
+    background-color: inherit;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+#laptopCategoryParent:hover #LaptopSubmenu
+{
+    display: flex;
+}
+
+#laptopSubmenuLeft 
+{
+    padding: 2rem 1rem;
+    width: 15rem;
+    color: var(--grey4);
+    font-size: 0.8rem;
+}
+#laptopSubmenuRight img 
+{
+    width: 18rem;
+    height: 100%;
+}
+
+#laptopSubmenuLeft ul li a
+{
+    display: block;
+    padding: 0rem;
+    border: none;
+}
+
+#laptopSubmenuLeft ul li
+{
+    border: none;
+}
+
+#laptopSubmenuLeft ul li:not(:last-child)
+{
+    padding-bottom: 0.8rem;
+}
+
+/* ---------------Styling Camera Submenu-------------- */
+
+
+
+
