@@ -24,6 +24,10 @@
     --blue4: #001d3d;
     --green1: #75b82b;
     --green2: #4cb752;
+    --purple1: #c77dff;
+    --purple2: #9d4edd;
+    --purple3: #7b2cbf;
+    --purple4: #5a189a;
     --purple: #30013d;
 }
 
@@ -142,7 +146,7 @@
     padding-bottom: 0.5rem;
 }
 
-.topnav ul li a.a_parent.active + .dd_menu 
+.topnav ul li.a_parent:hover .dd_menu 
 {
     display: block;
 }
@@ -182,14 +186,14 @@
     justify-content: left;
 }
 
-.topnav ul li a.a_parent_2.active + .dd_menu_2
+.topnav ul li.a_parent_2:hover .dd_menu_2 
 {
     display: block;
 }
 
 .topnav .dd_menu_2{
 	position: absolute;
-	top: 2.6rem;
+	top: 2.5rem;
 	left: 6rem;
     z-index: 1;
     opacity: 1;
@@ -352,4 +356,89 @@
     {
         display: none;
     }
+}
+
+/* =====================
+                Desktop NavBar  
+                            ===================== */
+#desktopNav 
+{
+    background-color: var(--yellow4);
+    color: white;
+}
+
+#navbar 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.allCategories 
+{
+    display: flex;
+    width: 250px;
+    background-color: var(--purple3);
+    padding: 0.5rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-right: 0.8rem;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+#allCategoriesText 
+{
+    margin-right: 0.8rem;
+}
+
+#leftNav 
+{
+    display: flex;
+}
+
+#navList ul 
+{
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+}
+
+#navList ul li 
+{
+    margin-right: 1rem;
+}
+
+#hotTag 
+{
+    position: absolute;
+    background-color: var(--maroon1);
+    font-size: 0.7rem;
+    width: 40px;
+    text-align: center;
+    border-radius: 20%;
+    left: 90%;
+    top: 7rem;
+}
+
+#hotTag::before 
+{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 28%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 6px solid;
+    border-color: var(--maroon1) transparent transparent transparent;
+}
+
+
+#salesProductsText 
+{
+    padding: 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
