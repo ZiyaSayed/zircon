@@ -456,7 +456,7 @@
     opacity: 1;
     background-color: white;
     box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
-    display: none;
+    /* display: none; */
 }
 
 .allCategories:hover 
@@ -527,10 +527,22 @@
     color: var(--grey4);
     font-size: 0.8rem;
 }
+
 #laptopSubmenuRight img 
 {
-    width: 18rem;
+    width: 16rem;
     height: 100%;
+    object-fit: center;
+}
+
+#laptopSubmenuLeft ul li a
+{
+    transition: color 0.3s ease-in ;
+}
+
+#laptopSubmenuLeft ul li a:hover 
+{
+    color: var(--yellow4);
 }
 
 #laptopSubmenuLeft ul li a
@@ -552,6 +564,152 @@
 
 /* ---------------Styling Camera Submenu-------------- */
 
+#cameraSubmenu 
+{
+    position: absolute;
+	top: 7%;
+	left: 100%;
+    display: flex;
+    padding: 0rem;
+    z-index: 6;
+    opacity: 1;
+    background-color: inherit;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+#cameraCategoryParent:hover #cameraSubmenu
+{
+    display: flex;
+}
+
+#cameraSubmenuLeft ul li 
+{
+    border: none;
+    float: left;
+    display: flex;
+}
+
+#cameraSubmenuLeft ul li a
+{
+    transition: color 0.3s ease-in ;
+}
+
+#cameraSubmenuLeft ul li a:hover 
+{
+    color: var(--yellow4);
+}
+
+#cameraSubmenuLeft ul 
+{
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 0.5rem;
+    float: left;
+} 
+
+#cameraSubmenuLeft div 
+{
+    margin-bottom: 1rem;
+}
 
 
+#cameraSubmenuLeft 
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding:  1rem;
+    padding-bottom: 0rem;
+    width: 30rem;
+    color: var(--grey4);
+    font-size: 0.8rem;
+}
 
+#cameraSubmenuLeft h3 
+{
+    margin-bottom: 0.8rem;
+    margin-right: 1rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    color: var(--purple3);
+    border-bottom: 1px solid var(--grey1);
+}
+
+#cameraSubmenuRight img 
+{
+    width: 18rem;
+    height: 100%;
+}
+
+/* ---------------Styling Electronic Submenu-------------- */
+
+#electronicSubmenu 
+{
+    position: absolute;
+	top: 14%;
+	left: 100%;
+    display: flex;
+    padding: 0rem;
+    z-index: 6;
+    opacity: 1;
+    background-color: inherit;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+#electronicCategoryParent:hover #electronicSubmenu
+{
+    display: flex;
+}
+
+#electronicSubmenu div h3 
+{
+    color: var(--purple3);
+    border-bottom: 1px solid var(--grey1);
+    margin: 0rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 0.3rem 0rem;
+}
+
+#electronicSubmenu div 
+{
+    margin-right: 1rem;
+    width: 15rem;
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+#electronicSubmenu div ul li
+{
+    border: none;
+    float: left;
+    display: flex;
+}
+
+#electronicSubmenu div ul
+{
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1rem;
+    float: left;
+}
+
+
+#electronicSubmenu ul li a
+{
+    transition: color 0.3s ease-in ;
+}
+
+#electronicSubmenu ul li a:hover 
+{
+    color: var(--yellow4);
+}
+
+.electronicSubmenuElement div img 
+{
+    width: 12rem;
+}
+
+.electronicSubmenuElement div ul 
+{
+    height: 175.94px;
+}
