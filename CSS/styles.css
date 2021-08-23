@@ -330,7 +330,17 @@
 {
     border: 1px solid var(--grey3);
     margin-left: 1rem;
+    transition: all 0.3s ease-in;
 }
+
+
+.midNavIcon:hover 
+{
+    color: var(--yellow4);
+    border-color: var(--yellow4);
+    cursor: pointer;
+}
+
 
 #midNavIcons .midNavIcon i
 {
@@ -456,7 +466,7 @@
     opacity: 1;
     background-color: white;
     box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
-    /* display: none; */
+    display: none;
 }
 
 .allCategories:hover 
@@ -483,6 +493,11 @@
 .categoryDropdown ul li:not(:last-child)
 {
     border-bottom: 1px solid var(--grey2);
+}
+
+.categoryDropdown ul li a
+{
+    transition: color 0.3s ease-in-out;
 }
 
 .categoryDropdown ul li a:hover
@@ -713,3 +728,384 @@
 {
     height: 175.94px;
 }
+
+/* -----------Styling Tablets submenu----------- */
+
+#tabletSubmenu 
+{
+    position: absolute;
+	top: 22.8%;
+	left: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    z-index: 6;
+    opacity: 1;
+    background-color: inherit;
+    box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
+    display: none;
+}
+
+#tabletCategoryParent:hover #tabletSubmenu
+{
+    display: flex;
+}
+
+#tabletSubmenuTop 
+{
+    display: flex;
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--grey1);
+}
+
+
+
+#tabletSubmenuTop div
+{
+    width: 15rem;
+    height: 18rem;
+}
+
+
+.tabletSubmenuList h3 
+{
+    color: var(--purple3);
+    border-bottom: 1px solid var(--grey1);
+    margin: 0rem 1rem;
+    padding: 1rem 0rem 0.3rem 0rem;
+}
+
+.tabletSubmenuList ul 
+{
+    padding: 0rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+#tabletSubmenu ul li a
+{
+    font-size: 0.8rem;
+    transition: color 0.3s ease-in ;
+}
+
+#tabletSubmenu ul li a:hover 
+{
+    color: var(--yellow3);
+}
+
+#tabletSubmenuList1 ul li 
+{
+    border: none;
+    display: flex;
+    float: left;
+}
+
+#tabletSubmenuList2 ul li 
+{
+    border: none;
+    display: flex;
+    float: left;
+}
+
+#tabletSubmenuImage img 
+{
+    width: 18rem;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+
+#tabletSubmenuBottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+#tabletSubmenuBottom div figure img 
+{
+    width: 3rem;
+}
+
+#tabletSubmenuBottom div figure 
+{
+    position: relative;
+}
+
+#tabletSubmenuBottom div figure::before {
+	position: absolute;
+	top: 10%;
+	left: -105%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+#tabletSubmenuBottom div figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 10%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 100%;
+	}
+}
+
+
+/* =============MEDIA QUERY FOR Desktop NAV============== */
+
+@media (max-width: 1024px)
+{
+    #desktopNav 
+    {
+        display: none;
+    }
+}
+
+/* ------------------------
+                Mobile Navbar
+                        ------------------------- */
+#mobileNav 
+{
+    background-color: var(--yellow4);
+    color: white;
+}
+
+#mobileNavbar 
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 0.4rem 0rem;
+}
+
+
+#mobileNavbarLeft
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+#mobileNavbarLeft img 
+{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+
+#searchNavbar 
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    width: 90%;
+}
+
+#searchNavbar input 
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.25rem 0rem;
+}
+
+#searchNavbar i
+{
+    font-size: 0.8rem;
+    padding: 0rem 0.5rem;
+}
+
+#searchNavbar input::placeholder
+{
+    color:white;
+    font-weight: bold;
+}
+
+
+#mobileNavbarRight 
+{
+    display: grid;
+    justify-content: right;
+}
+
+#mobileNavbarRight i 
+{
+    padding: 0rem 0.2rem;
+    font-size: 0.9rem;
+}
+
+#mobileNavbarRight i:last-child
+{
+    padding: none;
+}
+
+#mobileNavbarRight i:not(:last-child)
+{
+    border-right: 1px solid white;
+}
+
+/* --------------- Media Query for mobile navbar ---------------- */
+
+@media (min-width: 321px)
+{
+    #searchNavbar 
+        {
+            width: 100%;
+        }
+
+        #mobileNavbarLeft
+{
+    grid-template-columns: 1fr 8fr;
+}
+
+#mobileNavbarRight i 
+{
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+}
+
+
+}
+
+@media (min-width: 768px)
+{
+    #mobileNavbar 
+    {
+        grid-template-columns: 5fr 1fr;
+    }
+
+    #mobileNavbarLeft
+    {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+@media (min-width: 1025px)
+{
+    #mobileNav 
+    {
+        display: none;
+    }
+}
+
+/* -------------------
+            Styling Sidebar 
+                    ---------------------- */
+
+#sidebar 
+{
+    position: fixed;
+    width: 0rem;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    left: -18rem;
+    transition: all 0.3s ease-in;
+}
+
+#sidebar.open {
+    left: 18rem;
+    width: 18rem;
+  }
+
+
+  @media (max-width: 1024px)
+{
+    body.active::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--black1) none no-repeat 0 0;
+        opacity: 0.7;
+        z-index: 0;
+        transition: 0.8s;
+      }
+}
+
+#sidebarHeading 
+{
+    background-color: var(--yellow4);
+    padding: 0.7rem 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#sidebarHeading i 
+{
+    margin-left: 3rem;
+    color: var(--maroon1);
+}
+
+#sidebar ul li 
+{
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li:not(:last-child)
+{
+    border-bottom: 1px solid var(--grey1);
+}
+
+#sidebar ul li a
+{
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: bold;
+    width: 80%;
+    transition: color 0.3s ease-in;
+}
+
+/* #sidebar ul li a:hover 
+{
+    color: var(--purple4);
+}
+
+#sidebar ul li i 
+{
+    transition: all 0.3s ease-in-out;
+}
+
+#sidebar ul li i:hover 
+{
+    transform: rotate(180deg);
+} */
+
+/* ---------------- Sidebar media Query -------------------- */
+
+@media (min-width: 1025px)
+{
+    #sidebar 
+    {
+        display: none;
+    }
+
+}
+
+
+
+
+
