@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo-removebg-preview.png">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <!-- ----------------------- Carousel -------------------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="CSS/styles.css">
     <title>Document</title>
 </head>
@@ -869,189 +876,260 @@
 
                 <!-- ================ SideBar ========================= -->
 
-    <section id="sidebar">
-        <div id="sidebarHeading">
-            All Categories
-            <i id="closeSidebar" class="fas fa-times"></i>
-        </div>
+                <section id="sidebar">
+                    <div id="sidebarHeading">
+                        All Categories
+                        <i id="closeSidebar" class="fas fa-times"></i>
+                    </div>
 
-        <ul>
-            <li>
-
-                <a href="#">Laptops & Computers</a>
-                <i data-submenu='1' class="fas fa-chevron-down openSubmenu"></i>
-
-                <div class="subcategoryMenu" id="subcategoryMenu-1">
                     <ul>
                         <li>
-                            <a href="#">Desktop Computers</a>
+
+                            <a href="#">Laptops & Computers</a>
+                            <i data-submenu='1' class="fas fa-chevron-down openSubmenu"></i>
+
+                            <div class="subcategoryMenu" id="subcategoryMenu-1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Desktop Computers</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Monitors</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Laptops</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">iPad & Tablets</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Hard Drives & Storage</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Printers & Supplies</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">computerAccessories</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <a href="#">Monitors</a>
+                            <a href="#">Cameras & Photography</a>
+                            <i data-submenu='2' class="fas fa-chevron-down openSubmenu"></i>
+
+                            <div class="subcategoryMenu" id="subcategoryMenu-2">
+                                <ul>
+                                    <li>
+                                        <a href="#">Digital Cameras</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">DSLR Cameras</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Digital Paints & Shoot Cameras</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Camera Lenses</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <a href="#">Laptops</a>
+                            <a href="#">Smart Phones</a>
+                            <i data-submenu='3' class="fas fa-chevron-down openSubmenu"></i>
+
+                            <div class="subcategoryMenu" id="subcategoryMenu-3">
+                                <ul>
+                                    <li>
+                                        <a href="#">Phone Accessories</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Computer Accessories</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Kindle Accessories</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <a href="#">iPad & Tablets</a>
+                            <a href="#">Tablets</a>
+                            <i data-submenu='4' class="fas fa-chevron-down openSubmenu"></i>
+
+                            <div class="subcategoryMenu" id="subcategoryMenu-4">
+                                <ul>
+                                    <li>
+                                        <a href="#">Shop by Brand</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Shop by Capacity</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <a href="#">Hard Drives & Storage</a>
+                            <a href="#">Video Games & Consoles</a>
                         </li>
 
                         <li>
-                            <a href="#">Printers & Supplies</a>
+                            <a href="#">TV & Audio</a>
                         </li>
 
                         <li>
-                            <a href="#">computerAccessories</a>
+                            <a href="#">Appliances</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Car Electronic & GPS</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Printers & Ink</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Software</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Office Supplies</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Computer Components</a>
+                        </li>
+
+                        <li>
+                            <a href="#">PC Gaming Headsets</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Smart TVs</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Smart Watches</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Beauty, Fitness & Sports</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Home & Garden</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Industrial & Scientific</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Laptops & Computers</a>
                         </li>
                     </ul>
-                </div>
-            </li>
+                </section>
 
-            <li>
-                <a href="#">Cameras & Photography</a>
-                <i data-submenu='2' class="fas fa-chevron-down openSubmenu"></i>
-
-                <div class="subcategoryMenu" id="subcategoryMenu-2">
-                    <ul>
-                        <li>
-                            <a href="#">Digital Cameras</a>
-                        </li>
-
-                        <li>
-                            <a href="#">DSLR Cameras</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Digital Paints & Shoot Cameras</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Camera Lenses</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <a href="#">Smart Phones</a>
-                <i data-submenu='3' class="fas fa-chevron-down openSubmenu"></i>
-
-                <div class="subcategoryMenu" id="subcategoryMenu-3">
-                    <ul>
-                        <li>
-                            <a href="#">Phone Accessories</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Computer Accessories</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Kindle Accessories</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <a href="#">Tablets</a>
-                <i data-submenu='4' class="fas fa-chevron-down openSubmenu"></i>
-
-                <div class="subcategoryMenu" id="subcategoryMenu-4">
-                    <ul>
-                        <li>
-                            <a href="#">Shop by Brand</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Shop by Capacity</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <a href="#">Video Games & Consoles</a>
-            </li>
-
-            <li>
-                <a href="#">TV & Audio</a>
-            </li>
-
-            <li>
-                <a href="#">Appliances</a>
-            </li>
-
-            <li>
-                <a href="#">Car Electronic & GPS</a>
-            </li>
-
-            <li>
-                <a href="#">Printers & Ink</a>
-            </li>
-
-            <li>
-                <a href="#">Software</a>
-            </li>
-
-            <li>
-                <a href="#">Office Supplies</a>
-            </li>
-
-            <li>
-                <a href="#">Computer Components</a>
-            </li>
-
-            <li>
-                <a href="#">PC Gaming Headsets</a>
-            </li>
-
-            <li>
-                <a href="#">Smart TVs</a>
-            </li>
-
-            <li>
-                <a href="#">Smart Watches</a>
-            </li>
-
-            <li>
-                <a href="#">Accessories</a>
-            </li>
-
-            <li>
-                <a href="#">Beauty, Fitness & Sports</a>
-            </li>
-
-            <li>
-                <a href="#">Home & Garden</a>
-            </li>
-
-            <li>
-                <a href="#">Industrial & Scientific</a>
-            </li>
-
-            <li>
-                <a href="#">Laptops & Computers</a>
-            </li>
-        </ul>  
-    </section>
-
-    <!-- ================== TopBar =================== -->
+                <!-- ================== TopBar =================== -->
             </nav>
 
+            <!-- ======================== Hero Section ===================== -->
+
+            <div class="hero">
+                <div class="glide" id="glide_1">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="hero__center">
+                                    <div class="hero__left">
+                                        <span class="">The New Collection</span>
+                                        <h1 class="">Smart Speakers</h1>
+                                        <a href="#"><button class="hero__btn">START BUYING</button></a>
+                                    </div>
+                                    <div class="hero__right">
+                                        <div class="hero__img-container">
+                                            <img class="banner_01" src="./images/slider1.png" alt="banner2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="hero__center">
+                                    <div class="hero__left">
+                                        <span class="">The New Collection</span>
+                                        <h1 class="">Smart Speakers</h1>
+                                        <a href="#"><button class="hero__btn">START BUYING</button></a>
+                                    </div>
+                                    <div class="hero__right">
+                                        <div class="hero__img-container">
+                                            <img class="banner_01" src="./images/slider2.png" alt="banner2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="glide__slide">
+                                <div class="hero__center">
+                                    <div class="hero__left">
+                                        <span class="">The New Collection</span>
+                                        <h1 class="">Smart Speakers</h1>
+                                        <a href="#"><button class="hero__btn">START BUYING</button></a>
+                                    </div>
+                                    <div class="hero__right">
+                                        <div class="hero__img-container">
+                                            <img class="banner_01" src="./images/slider3.png" alt="banner2" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+
+                </div>
+            </div>
         </header>
     </div>
 
-    
 
+
+    <!-- -------------------- 
+                        Scripts
+                        --------------------------- -->
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Javascript files -->
     <script src="JS/script.js"></script>
+    <script src="JS/slider.js"></script>
 
 </body>
 
