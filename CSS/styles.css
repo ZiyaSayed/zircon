@@ -541,6 +541,7 @@
     padding: 2rem 1rem;
     width: 15rem;
     color: var(--grey4);
+    background-color: white;
     font-size: 0.8rem;
 }
 
@@ -599,6 +600,10 @@
     display: flex;
 }
 
+#cameraSubmenuLeft 
+{
+    background-color: white;
+}
 #cameraSubmenuLeft ul li 
 {
     border: none;
@@ -686,6 +691,11 @@
     padding: 1rem 0rem 0.3rem 0rem;
 }
 
+#electronicSubmenu 
+{
+    background-color: white;
+} 
+
 #electronicSubmenu div 
 {
     margin-right: 1rem;
@@ -742,7 +752,7 @@
     padding: 0rem;
     z-index: 6;
     opacity: 1;
-    background-color: inherit;
+    background-color: white;
     box-shadow: 2px 5px 8px rgb(51 51 51 / 5%), -2px 5px 8px rgb(51 51 51 / 5%);
     display: none;
 }
@@ -1018,6 +1028,7 @@
     background-color: white;
     left: -18rem;
     transition: all 0.3s ease-in;
+    z-index: 8;
 }
 
 #sidebar.open {
@@ -1178,29 +1189,27 @@
 .hero__right 
 {
     width: 50%;
+    background: var(--blue1);
 }
 
 .hero__left span 
 {
     color: var(--black2);
     font-weight: 500;
-}
-
-.hero__left h1 
-{
     font-size: 1rem;
-    font-weight: bold;
-    color: var(--black1);
-    margin-bottom: 2rem;
 }
 
 .hero__left p 
 {
-    color: var(--grey4);
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 1rem;
+    display: none;
+}
+
+.hero__left h1 
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black1);
+    margin-bottom: 2rem;
 }
 
 .hero__left a button 
@@ -1225,14 +1234,15 @@
 .hero__img-container
 {
     width: 100%;
-    max-width: 20rem;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero__img-container img 
 {
     width: 10rem;
-
 }
 
 .glide__bullets 
@@ -1256,9 +1266,9 @@
 
 .bullet:first-child
 {
-    border-top: 1px solid var(--purple);
-    border-left: 1px solid var(--purple);
-    border-bottom: 1px solid var(--purple);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     border-right: 1px solid transparent;
     border-radius: 20rem;
     transition: all ease-in;
@@ -1305,4 +1315,65 @@
     }
 }
 
+/* -------------------- Hero Section media Query------------------- */
+
+@media (min-width: 426px)
+{
+    .hero__left span 
+    {
+        font-size: 1.5rem;
+    }
+
+    .hero__left p 
+    {
+        display: block;
+        text-transform: uppercase;
+        color: var(--grey4);
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero__left h1 
+    {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero__img-container img 
+    {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 769px)
+{
+    .hero__img-container img 
+    {
+        width: 16rem;
+    }
+}
+
+@media (min-width: 1025px)
+{
+    .hero__left span 
+    {
+        font-size: 3rem;
+    }
+
+    .hero__left h1 
+    {
+        font-size: 5rem;
+    }
+
+    .hero__left p 
+    {
+        font-size: 2rem;
+    }
+
+    .hero__img-container img 
+    {
+        width: 18rem;
+    }
+}
 
