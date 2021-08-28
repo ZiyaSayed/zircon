@@ -1,0 +1,12 @@
+{
+    "products":
+    [
+        {
+            "id": 1,
+            "name": "Apple iPhone 11",
+            "image": "/",
+            "price": 800,
+            "type": "featured"
+        }
+    ]
+}

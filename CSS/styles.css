@@ -1498,6 +1498,12 @@ body
     opacity: 0.9;
 }
 
+#discountSection-1
+{
+    background-image: linear-gradient(90deg, var(--maroon1) 0%, rgba(255,224,25,1) 40%, rgba(255,238,50,0.5550595238095238) 100%, rgba(255,244,100,1) 100%);
+
+}
+
 .discountImage 
 {
     position: absolute;
@@ -1650,4 +1656,47 @@ body
 
 }
 
+/* <!-- ------------------ 
+            Products Filter Styling
+                --------------------------- --> */
+
+#filterTabs ul 
+{
+    display: flex;
+}
+
+#filterTabs ul li 
+{
+    margin: 0rem 0.5rem;
+    list-style: none;
+    padding: 0rem; 
+}
+
+
+#filterTabs ul li::before 
+{
+  content: "\2022";
+  color: var(--grey1);
+  font-weight: bolder;
+  display: inline-block; 
+  width: 1rem;
+}
+
+#filterTabs ul li a 
+{
+    text-decoration: none;
+    color: var(--grey4);
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+#filterTabs ul li a:hover 
+{
+    color: var(--black2);
+}
+
+#filterTabs ul li a.activeTab 
+{
+    color: var(--black2);
+}
 
