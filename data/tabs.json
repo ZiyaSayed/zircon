@@ -4,9 +4,17 @@
         {
             "id": 1,
             "name": "Apple iPhone 11",
-            "image": "/",
+            "image": "./images/tabs/usbCord.png",
             "price": 800,
             "type": "featured"
+        },
+
+        {
+            "id": 2,
+            "name": "Apple iPhone 13",
+            "image": "./images/tabs/usbCord.png",
+            "price": 800,
+            "type": "onSale"
         }
     ]
 }

@@ -1670,19 +1670,10 @@ body
     margin: 0rem 0.5rem;
     list-style: none;
     padding: 0rem; 
+    cursor: pointer;
 }
 
-
-#filterTabs ul li::before 
-{
-  content: "\2022";
-  color: var(--grey1);
-  font-weight: bolder;
-  display: inline-block; 
-  width: 1rem;
-}
-
-#filterTabs ul li a 
+.primarTitle
 {
     text-decoration: none;
     color: var(--grey4);
@@ -1690,13 +1681,13 @@ body
     transition: all 0.3s ease-in;
 }
 
-#filterTabs ul li a:hover 
+.primarTitle:hover 
 {
     color: var(--black2);
 }
 
-#filterTabs ul li a.activeTab 
+.categoryTitle.activeTab .primarTitle
 {
-    color: var(--black2);
+    color: var(--orange);
 }
 
