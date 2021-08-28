@@ -1489,12 +1489,13 @@ body
 
 .discountWrapper 
 {
-    height: 12rem;
+    height: 10rem;
     overflow: hidden;
     cursor: pointer;
     position: relative;
     margin-bottom: 3rem;
     background-image: linear-gradient(90deg, rgba(238,117,0,1) 0%, rgba(255,224,25,1) 40%, rgba(255,238,50,0.5550595238095238) 100%, rgba(255,244,100,1) 100%);
+    opacity: 0.9;
 }
 
 .discountImage 
@@ -1507,6 +1508,11 @@ body
     top: -5rem;
     left: -1rem;
     transition: all 0.5s ease-in-out;
+}
+
+#discountSection-1 .discountImage 
+{
+    left: 5rem;
 }
 
 .discountSection
@@ -1528,7 +1534,7 @@ body
 .discountText h4 
 {
     font-size: 1rem;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
 }
 
 .discountText a 
@@ -1536,7 +1542,7 @@ body
     text-decoration: none;
     position: relative;
     display: inline;
-    color: white;
+    color: var(--purple);
     padding: 1rem 1rem 0rem 1rem;
     text-align: left;
     font-size: 0.9rem;
@@ -1544,10 +1550,10 @@ body
 
 .discountText h1 
 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 0rem 1rem 0rem 1rem;
     margin-bottom: 0rem;
-    color: var(--maroon1);
+    color: white;
 }
 
 .discountWrapper:hover .discountImage 
@@ -1575,6 +1581,27 @@ body
 
 @media (min-width: 400px)
 {
+    .discountImage 
+    {
+        left: 1rem;
+    }
+}
+
+@media (min-width: 569px)
+{
+    .discountImage 
+    {
+        left: 8rem;
+    }
+
+    #discountSection-1 .discountImage 
+    {
+        left: 8rem;
+    }
+}
+
+@media (min-width: 769px)
+{
     #discountSect
     {
         grid-template-columns: repeat(2,auto);
@@ -1582,8 +1609,9 @@ body
 
     .discountImage 
     {
-        left: 1rem;
+        left: 4rem;
     }
+
 }
 
 @media (min-width: 1000px)
@@ -1591,6 +1619,10 @@ body
     .discountImage 
     {
         left: 8rem;
+    }
+    #discountSection-1 .discountImage 
+    {
+        left: 15rem;
     }
 }
 
