@@ -3,18 +3,82 @@
     [
         {
             "id": 1,
-            "name": "Apple iPhone 11",
+            "name": "USB Cord",
             "image": "./images/tabs/usbCord.png",
-            "price": 800,
+            "price": 7.86,
             "type": "featured"
         },
 
         {
             "id": 2,
-            "name": "Apple iPhone 13",
-            "image": "./images/tabs/usbCord.png",
-            "price": 800,
+            "name": "Apple iPhone 11",
+            "image": "./images/tabs/iphone11.png",
+            "price": 816.36,
             "type": "onSale"
+        },
+
+        {
+            "id": 3,
+            "name": "Samsung Semi automatic washing machine",
+            "image": "./images/tabs/washingMachine.png",
+            "price": 163.27,
+            "type": "featured"
+        },
+
+        {
+            "id": 4,
+            "name": "Philips Multipurpose Shaver",
+            "image": "./images/tabs/philipsShaver.png",
+            "price": 7.08,
+            "type": "featured"
+        },
+
+        {
+            "id": 5,
+            "name": "Whirpool Microwave",
+            "image": "./images/tabs/microwave.png",
+            "price": 149.67,
+            "type": "featured"
+        },
+
+        {
+            "id": 6,
+            "name": "Student's Laptop",
+            "image": "./images/tabs/laptop.png",
+            "price": 544.24,
+            "type": "featured"
+        },
+
+        {
+            "id": 7,
+            "name": "Modern Air Conditioner",
+            "image": "./images/tabs/airConditioner.png",
+            "price": 467.08,
+            "type": "featured"
+        },
+
+        {
+            "id": 8,
+            "name": "Camera and Lenses",
+            "image": "./images/tabs/camera.png",
+            "price": 544.11,
+            "type": "featured"
+        },
+
+        {
+            "id": 9,
+            "name": "Hair Styling Product",
+            "image": "./images/tabs/hairProduct.png",
+            "price": 20,
+            "type": "featured"
+        },
+
+        {
+            "id": 10,
+            "name": "Versatile Recording Microphone",
+            "image": "./images/tabs/microphone.png",
+            "price": 68.03,
+            "type": "featured"
         }
     ]
 }
