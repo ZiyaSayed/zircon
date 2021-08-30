@@ -1728,19 +1728,22 @@ body
 
 .productData 
 {
-    margin: 0.5rem auto;
-    text-align: left;
+    margin: 0.5rem 0rem;
     padding: 0rem 1rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .productImage img 
 {
-    width: 90%;
+    width: 8rem;
 }
 
 .productName h1 
 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
     color: var(--purple4);
     text-overflow: ellipsis;
@@ -1761,7 +1764,7 @@ body
 
 .basketIcon 
 {
-    border: 1px solid var(--blue3);
+    border: 1px solid var(--yellow4);
     padding: 0.3rem;
     border-radius: 0.3rem;
     color: var(--yellow4);
@@ -1792,4 +1795,41 @@ body
 {
     visibility: visible;
 }
+
+/* ======================================================
+        Media query for products filter section
+======================================================= */
+
+@media (min-width: 600px)
+{
+    #productFilterDiv-2 
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .productImage 
+    {
+        height: 10rem;
+    }
+
+    .productImage img 
+    {
+        width: 6rem;
+    }
+
+}
+
+@media (min-width: 1000px)
+{
+    #productFilterDiv-2 
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .productName h1 
+    {
+        font-size: 0.9rem;
+    }
+}
+
 
