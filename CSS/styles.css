@@ -1832,4 +1832,95 @@ body
     }
 }
 
+/* ======================================================
+        Styling Deals Secition
+======================================================= */
 
+.dealSection  
+{
+    margin: 3rem 0rem;
+    padding-top: 4rem; 
+    color: white;
+}
+
+.dealSection 
+{
+    background-color: #f5f3f4;
+}
+
+.superDealCard 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    background: rgb(238,117,0);
+    border-radius: 2rem;
+    margin: 0rem 0.5rem;
+    padding: 3rem 0rem;
+    background: linear-gradient(100deg, rgba(238,117,0,1) 0%, rgba(255,224,25,1) 58%, rgba(255,238,50,0.5550595238095238) 100%, rgba(255,244,100,1) 100%);}
+
+.dealCardMid img 
+{
+    width: 15rem;
+}
+
+.dealCardBottom 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealName p 
+{
+    text-align: center;
+}
+
+.dealCardTop 
+{
+    position: relative;
+}
+
+.pulsingCircle
+{
+    position: relative;
+}
+
+.dealCardHeader 
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+}
+
+.dealCardHeader p 
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* -------------- Pulsing Styling ------------------- */
+.circle {
+    border-radius: 50%;
+    background-color: var(--orange);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: -2rem;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .5;
+    }
+    to {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
