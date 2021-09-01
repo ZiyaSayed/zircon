@@ -1852,15 +1852,21 @@ body
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-weight: bold;
-    justify-content: center;
     background: rgb(238,117,0);
     border-radius: 2rem;
     margin: 0rem 0.5rem;
     padding: 3rem 0rem;
     background: linear-gradient(100deg, rgba(238,117,0,1) 0%, rgba(255,224,25,1) 58%, rgba(255,238,50,0.5550595238095238) 100%, rgba(255,244,100,1) 100%);}
 
+
+.dealCardMid 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem auto;
+}
 .dealCardMid img 
 {
     width: 15rem;
@@ -1898,10 +1904,65 @@ body
 
 .dealCardHeader p 
 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
+.outerContainer 
+{
+    position: relative;
+}
+
+#innerContainer p 
+{
+    position: absolute;
+    z-index: 6;
+    font-size: 0.9rem;
+    top: -0.5rem;
+    left: 1.5rem;
+}
+
+.dealStatistics 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+}
+
+.dealStatistic 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 1rem;
+}
+
+.dealStatistic div:first-child 
+{
+    margin-right: 2.5rem;
+}
+
+.saleSlider 
+{
+    height: 0.6rem; 
+    width: 90%;
+    margin: 1.5rem auto;
+	background: linear-gradient(to right, var(--orange) 56.25%, white 43.75%);
+    border-radius: 2rem;
+}
+
+.salesText p 
+{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.offerTimer 
+{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.2rem 0.8rem;
+}
 /* -------------- Pulsing Styling ------------------- */
 .circle {
     border-radius: 50%;
