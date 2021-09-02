@@ -1854,7 +1854,6 @@ body
     flex-direction: column;
     font-weight: bold;
     background: rgb(238,117,0);
-    border-radius: 2rem;
     margin: 0rem 0.5rem;
     padding: 3rem 0rem;
     background: linear-gradient(100deg, rgba(238,117,0,1) 0%, rgba(255,224,25,1) 58%, rgba(255,238,50,0.5550595238095238) 100%, rgba(255,244,100,1) 100%);}
@@ -1985,3 +1984,151 @@ body
       opacity: 0;
     }
   }
+
+/* 
+===================================
+    Styling the sales deal section
+======================================= */
+
+.dealGrid 
+{
+    color: var(--black1);
+    font-weight: bold;
+    margin: 3rem 1rem;
+}
+
+.topDealGrids 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.topDealGrid 
+{
+    margin-right: 0.8rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+.topDealGrid:hover 
+{
+    border: 1px solid var(--yellow4);
+} 
+
+.topDealGrid:hover .dealPopUp 
+{
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.topDealWrapper 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.topDealImage 
+{
+    padding: 2rem 0rem ;
+}
+
+.topDealText 
+{
+    padding: 0rem 0.8rem;
+    padding-right: none;
+}
+
+.topDealImage img 
+{
+    width: 8rem;
+}
+
+.dealPara 
+{
+    font-size: 1rem;
+}
+
+.dealInfo 
+{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    font-size: 1.2rem;
+    color: var(--black2);
+}
+
+.dealInfo i 
+{
+    color: var(--yellow4);
+    border: 1px solid var(--yellow4);
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+}
+
+.bottomDealGrids 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottomDealGrid 
+{
+    margin-right: 0.8rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+.bottomDealGrid:hover 
+{
+    border: 1px solid var(--yellow4);
+} 
+
+.bottomDealGrid:hover .dealPopUp 
+{
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.bottomDealWrapper 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomDealImage 
+{
+    padding: 2rem 0rem ;
+}
+
+.bottomDealText 
+{
+    padding: 0rem 0.8rem;
+    padding-right: none;
+}
+
+.bottomDealImage img 
+{
+    width: 8rem;
+}
+
+.dealPopUp 
+{
+    display: flex;
+    visibility: hidden;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--yellow4); 
+    margin: 0rem auto;
+    padding: 0.5rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in;
+}
+
+.dealPopUp i 
+{
+    margin-right: 0.8rem;
+}
