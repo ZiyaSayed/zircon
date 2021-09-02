@@ -1841,10 +1841,6 @@ body
     margin: 3rem 0rem;
     padding-top: 4rem; 
     color: white;
-}
-
-.dealSection 
-{
     background-color: #f5f3f4;
 }
 
@@ -1866,6 +1862,7 @@ body
     justify-content: center;
     margin: 1.2rem auto;
 }
+
 .dealCardMid img 
 {
     width: 15rem;
@@ -1987,7 +1984,7 @@ body
 
 /* 
 ===================================
-    Styling the sales deal section
+    Styling the sales dealGrid section
 ======================================= */
 
 .dealGrid 
@@ -2031,6 +2028,9 @@ body
 .topDealImage 
 {
     padding: 2rem 0rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topDealText 
@@ -2101,6 +2101,9 @@ body
 .bottomDealImage 
 {
     padding: 2rem 0rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottomDealText 
@@ -2132,3 +2135,108 @@ body
 {
     margin-right: 0.8rem;
 }
+/* 
+-----------------------------------------
+     Media Query for sales section
+----------------------------------------- */
+
+@media (min-width: 600px)
+{
+    
+    .bottomDealImage img 
+    {
+        width: 12rem;
+    }
+
+
+    .topDealImage img 
+    {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 768px)
+{
+    
+    .bottomDealImage img 
+    {
+        width: 8rem;
+    }
+
+
+    .topDealImage img 
+    {
+        width: 14rem;
+    }
+
+
+    .bottomDealGrids 
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .topDealImage 
+    {
+        padding: 1rem 0rem ;
+    }
+
+    .bottomDealImage 
+    {
+        padding: 1rem 0rem ;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .deals 
+    {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+
+    .topDealWrapper 
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    
+    .topDealImage img 
+    {
+        width: 10rem;
+    }
+
+    .topDealText 
+    {
+        padding: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .dealGrid 
+    {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding: 0rem;
+    }
+
+    .dealSection 
+    {
+        margin-bottom: 0rem;
+    }
+    
+    .superDealCard 
+    {
+        padding-bottom: none;
+    }
+
+    .bottomDealImage img 
+    {
+        width: 12rem;
+    }
+
+    .topDealImage img 
+    {
+        width: 15rem;
+    }
+}
+
