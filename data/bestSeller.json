@@ -1,0 +1,158 @@
+{
+    "bestSeller": 
+    [
+        {
+            "id": 1,
+            "name": "Philips HP8232 2200W Ziya Fatima SayedHair Dryer",
+            "image": "./images/bestSeller/top20/hairDryer.png",
+            "price": 7.86,
+            "type": "top20"
+        },
+
+        {
+            "id": 2,
+            "name": "Electric Kettle Super Electrolux EEK1303WW - 1.5L",
+            "image": "./images/bestSeller/top20/kettle.png",
+            "price": 7.86,
+            "type": "top20"
+        },
+
+        {
+            "id": 3,
+            "name": "Media front-load washing nachine MFG90-1200 (white) 9kg",
+            "image": "./images/bestSeller/top20/washingMachine.png",
+            "price": 7.86,
+            "type": "top20"
+        },
+
+        {
+            "id": 4,
+            "name": "Blender Philips HR22118 600W 1.5L",
+            "image": "./images/bestSeller/top20/blender.png",
+            "price": 7.86,
+            "type": "top20"
+        },
+
+        {
+            "id": 5,
+            "name": "Rice Cooker uckoo CR-0671V (1L) - Gen-unine Product",
+            "image": "./images/bestSeller/top20/cooker.png",
+            "price": 7.86,
+            "type": "top20"
+        },
+
+        {
+            "id": 6,
+            "name": "Dell Latitude E5430 Core i5-3320M 2.6Ghz 8GB RAM 500GB HDD",
+            "image": "./images/bestSeller/top20/blender1.png",
+            "price": 7.86,
+            "type": "top20"
+        }, 
+
+        {
+            "id": 7,
+            "name": "Jumper EZBOOK 3 PRO Notebook",
+            "image": "./images/bestSeller/phones/iphone1.png",
+            "price": 7.86,
+            "type": "phones"
+        }, 
+
+        {
+            "id": 8,
+            "name": "iPhone 2",
+            "image": "./images/bestSeller/phones/iphone2.png",
+            "price": 7.86,
+            "type": "phones"
+        }, 
+
+        {
+            "id": 9,
+            "name": "iPhone 3",
+            "image": "./images/bestSeller/phones/iphone3.png",
+            "price": 7.86,
+            "type": "phones"
+        }, 
+
+        {
+            "id": 10,
+            "name": "iPhone 4",
+            "image": "./images/bestSeller/phones/iphone4.png",
+            "price": 7.86,
+            "type": "phones"
+        }, 
+
+        {
+            "id": 11,
+            "name": "iPhone 5",
+            "image": "./images/bestSeller/phones/iphone5.png",
+            "price": 7.86,
+            "type": "phones"
+        }, 
+
+        {
+            "id": 12,
+            "name": "iPhone 6",
+            "image": "./images/bestSeller/phones/iphone6.png",
+            "price": 7.86,
+            "type": "phones"
+        },
+
+        {
+            "id": 13,
+            "name": "Dell Latitude E5430 Core i5-3320M 2.6Ghz 8GB RAM 500GB HDD",
+            "image": "./images/bestSeller/laptops/laptop1.png",
+            "price": 7.86,
+            "type": "laptops"
+        },
+
+        {
+            "id": 14,
+            "name": "Jumper EZBOOK 3 PRO Notebook",
+            "image": "./images/bestSeller/laptops/laptop2.png",
+            "price": 7.86,
+            "type": "laptops"
+        },
+
+        {
+            "id": 15,
+            "name": "Apple MacBook Air 13 Laptop i5 1.7GHz 128GB SSD EI Captain 4GB",
+            "image": "./images/bestSeller/laptops/laptop3.png",
+            "price": 7.86,
+            "type": "laptops"
+        },
+
+        {
+            "id": 16,
+            "name": "Jumper EZBOOK 3 PRO Notebook",
+            "image": "./images/bestSeller/laptops/laptop4.png",
+            "price": 7.86,
+            "type": "laptops"
+        }, 
+
+        {
+            "id": 17,
+            "name": "Rear Camera Module for AsusJ",
+            "image": "./images/bestSeller/cameras/camera1.png",
+            "price": 7.86,
+            "type": "cameras"
+        }, 
+
+        {
+            "id": 18,
+            "name": "Rear Camera Module for AsusZ",
+            "image": "./images/bestSeller/cameras/camera2.png",
+            "price": 7.86,
+            "type": "cameras"
+        }, 
+
+        {
+            "id": 19,
+            "name": "Rear Camera Module for AsusJ",
+            "image": "./images/bestSeller/cameras/camera3.png",
+            "price": 7.86,
+            "type": "cameras"
+        }
+
+        
+    ]
+}

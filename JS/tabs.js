@@ -1,8 +1,10 @@
 // Getting data from the jSon file
+// import { products } from "/data/tabs.json";
+// console.log(products);
 
 const getProducts = async () => {
   try {
-    const results = await fetch("./data/tabs.json");
+    const results = await fetch("/data/tabs.json");
     const data = await results.json();
     const products = data.products;
     return products;
@@ -10,8 +12,6 @@ const getProducts = async () => {
     console.log(err);
   }
 };
-
-
 const productFilter = document.querySelector("#productFilterDiv-2");
 
 window.addEventListener("DOMContentLoaded", async function () {
@@ -19,9 +19,9 @@ window.addEventListener("DOMContentLoaded", async function () {
   displayProductItems(products);
 });
 
-const displayProductItems = items => {
+const displayProductItems = (items) => {
   let displayProduct = items.map(
-    product => ` 
+    (product) => ` 
                         <div class="productCard">
                           <div class="product">
                             <div class="productImage">
@@ -57,28 +57,27 @@ const displayProductItems = items => {
   }
 };
 
-
 // ============================================
-//                 Filter 
+//                 Filter
 // ============================================
 
 const filterButton = document.querySelectorAll(".filterButton");
 const titles = document.querySelectorAll(".categoryTitle");
 
-titles.forEach(title => {
+titles.forEach((title) => {
   title.addEventListener("click", async (e) => {
     const id = title.dataset.id;
     const products = await getProducts();
 
     if (id) {
       // remove active from buttons
-      Array.from(filterButton).forEach(btn => {
+      Array.from(filterButton).forEach((btn) => {
         btn.classList.remove("activeTab");
       });
       title.classList.add("activeTab");
 
       // Load Products
-      let menuCategory = products.filter(product => {
+      let menuCategory = products.filter((product) => {
         if (product.type === id) {
           return product;
         }
@@ -89,11 +88,6 @@ titles.forEach(title => {
       } else {
         displayProductItems(menuCategory);
       }
-
     }
-  })
+  });
 });
-
-
-
-
