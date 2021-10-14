@@ -1,7 +1,3 @@
-// Getting data from the jSon file
-// import { products } from "/data/tabs.json";
-// console.log(products);
-
 const getProducts = async () => {
   try {
     const results = await fetch("/data/tabs.json");
