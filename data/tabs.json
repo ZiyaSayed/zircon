@@ -10,7 +10,7 @@
         },
 
         {
-            "id": 2,
+            "id": 2, 
             "name": "Apple iPhone 11",
             "image": "./images/tabs/iphone11.png",
             "price": 816.36,
