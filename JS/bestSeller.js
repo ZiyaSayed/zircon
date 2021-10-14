@@ -14,7 +14,14 @@ const bestSellerFilter = document.querySelector("#bestSellerDiv-2");
 
 window.addEventListener("DOMContentLoaded", async function () {
   const bestSellers = await getBestSeller();
-  displayBestSellerItems(bestSellers);
+
+  let top20 = bestSellers.filter((bestSeller) => {
+    if (bestSeller.type === "top20") {
+      return bestSeller;
+    }
+  });
+
+  displayBestSellerItems(top20);
 });
 
 const displayBestSellerItems = (items) => {
@@ -67,7 +74,7 @@ top20.classList.add("activeTab");
 
 bestSellerTitles.forEach((bestSellerTitle) => {
   bestSellerTitle.addEventListener("click", async (e) => {
-    const tag = bestSellerTitle.dataset.tag;
+    let tag = bestSellerTitle.dataset.tag;
     const products = await getBestSeller();
 
     if (tag) {
