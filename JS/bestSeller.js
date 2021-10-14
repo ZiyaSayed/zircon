@@ -1,5 +1,4 @@
 // Getting files from bestseller.json
-
 const getBestSeller = async () => {
   try {
     const results = await fetch("./data/bestSeller.json");
